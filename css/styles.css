@@ -270,11 +270,13 @@ letter-spacing: 0.03em;
 }
 .comand-social.list{
     display: flex;
-    justify-content: center;
-    color:#ffffff;
+justify-content: center;
+    color:red;
 } 
 .social-link{
-    display: block;
+    
+    display: flex;
+    justify-content: center;
  width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -283,13 +285,15 @@ letter-spacing: 0.03em;
     ;
 }
 
+
 .social-link:hover, 
 .social-link:focus{
     fill:var(--accent-color);
     background-color: tomato;
 }
 .comand-icon{
-    display:block;    
+    display:block; 
+    justify-content: center;   
     fill:currentColor;
    width: 20px;
    height: 20px;
