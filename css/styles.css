@@ -116,7 +116,8 @@ color: #212121;
     margin-right: 10px;
     fill:currentColor;
 }
-.item.adres:hover{
+.item.adres:hover,
+.item.adres:focus{
     color: var(--accent-color);
 }
 .item.adres{
@@ -270,21 +271,29 @@ letter-spacing: 0.03em;
 .comand-social.list{
     display: flex;
     justify-content: center;
+    color:#ffffff;
 } 
-.comand-icon{
-    display:block;
-    width: 44px;
+.social-link{
+    display: block;
+ width: 44px;
     height: 44px;
     border-radius: 50%;
-    fill: #fff;
-} 
-.comand-icon:hover{
-    fill:var(--accent-color)
+    color: tomato;
+    background-color:teal
+    ;
 }
-.social-item{
-    display: block;
-}  
 
+.social-link:hover, 
+.social-link:focus{
+    fill:var(--accent-color);
+    background-color: tomato;
+}
+.comand-icon{
+    display:block;    
+    fill:currentColor;
+   width: 20px;
+   height: 20px;
+}
 .comand{
 padding-top: 94px;
 padding-bottom: 94px;
@@ -403,10 +412,7 @@ letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
       
 }
-.social-item{
-    color: tomato;
 
-}
 .footer-item{
      display: block;
 margin-bottom: 9px;
@@ -425,7 +431,7 @@ letter-spacing: 0.03em;
 color: #FFFFFF;
 }
 .footer-icon{
-    fill:var(--primary-text-color);
+    /* fill:var(--primary-text-color); */
     background: rgba(255, 255, 255, 0.1);
      width: 44px;
     height: 44px;
