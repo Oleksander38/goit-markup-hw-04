@@ -121,12 +121,18 @@ color: #212121;
     color: var(--accent-color);
 }
 .item.adres{
+    display: block;
+    /* justify-content: center;
+    align-items: center; */
+}
+.link{
     display: flex;
-    align-items: center;
+    text-align: center;
 }
 
 .adres-list.list{
     display: flex;
+    align-items: center;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: auto;
