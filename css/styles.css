@@ -292,7 +292,7 @@ justify-content: center;
     color: #AFB1B8;
     background-color:#ffffff;
 }
-.comand-social.list .social-link+.social-link{
+.comand-social.list .social-item+.social-item{
     margin-left: 10px;
 }
 
@@ -395,7 +395,7 @@ border-radius: 4px;
 .customer{
     fill: currentColor;
 }
-.customers-list.list .customer-item+.customer-item{
+.customers-list .customer-item+.customer-item{
     margin-left: 30px;
 }
 .customer{
