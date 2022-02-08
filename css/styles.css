@@ -121,13 +121,12 @@ color: #212121;
     color: var(--accent-color);
 }
 .item.adres{
-    display: block;
-    /* justify-content: center;
-    align-items: center; */
+    display:flex;
+     justify-content: center;
+     align-items: center;  
 }
-.link{
-    display: flex;
-    text-align: center;
+.item.adres > .link{
+    align-items: baseline;
 }
 
 .adres-list.list{
@@ -145,6 +144,7 @@ color: #212121;
     display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
+    font-weight: 500;
 
     text-decoration:none;
     color:var(--primary-text-color);
@@ -277,7 +277,6 @@ justify-content: center;
     color:red;
 } 
 .social-link{
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -286,6 +285,9 @@ justify-content: center;
     border-radius: 50%;
     color: #AFB1B8;
     background-color:#ffffff;
+}
+.comand-social.list .social-link+.social-link{
+    margin-left: 10px;
 }
 
 
@@ -358,9 +360,13 @@ letter-spacing: 0.03em;
 }
 .customers{
     padding-bottom: 91px;
-    display: flex;
+   
     
-}.customer-linc{
+}
+.customers-list{
+ display: flex;
+}
+.customer-linc{
     display:flex;
     justify-content: center;
     align-items: center;
@@ -378,7 +384,7 @@ border-radius: 4px;
 .customer{
     fill: currentColor;
 }
-.customers.list .customer-item+.customer-item{
+.customers-list.list .customer-item+.customer-item{
     margin-left: 30px;
 }
 .customer{
@@ -388,7 +394,10 @@ border-radius: 4px;
     width: 106px;
     height: 60px;
 }
-.footers{ display: flex;}
+.footers{
+align-content: space-around;
+     display: flex;
+}
 .footer{  
 padding-top: 60px;
 padding-bottom: 60px;
@@ -468,10 +477,7 @@ color: #FFFFFF;
 }
 .footer-social{
 margin-left: 70px;
-
     display: block;
-    width: 206px;
-    height: 80px;
 }
 .footer-social.list{
   display: flex;
@@ -519,6 +525,7 @@ padding-bottom: 20px;
 
 }
 .filter-button{
+    border: none;
 border-radius: 4px;
 padding: 6px 22px;
 
@@ -550,7 +557,7 @@ letter-spacing: 0.06em;
     flex-wrap: wrap;   
 }
 .examples-item{
-    display: block;
+    /* display: block; */
     margin-right: 30px;
     margin-bottom: 30px;
     max-width: 370px;
@@ -572,4 +579,12 @@ letter-spacing: 0.06em;
 font-size: 16px;
 line-height:1.87;
 letter-spacing: 0.03em;
+}
+.examples-link{
+    display: block;
+}
+.examples-link:hover,
+.examples-link:focus{
+ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06)
+    , 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
