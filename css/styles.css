@@ -361,7 +361,7 @@ letter-spacing: 0.03em;
 }
 .customers-caption.caption{
     text-align: center;
-    padding-top: 94px;
+    
     margin-bottom: 50px;
 
     font-weight: 700;
@@ -370,7 +370,8 @@ line-height: 1.16;
 letter-spacing: 0.03em;
 }
 .customers{
-    padding-bottom: 91px;
+    padding-bottom: 94px;
+    padding-top: 94px;
    
     
 }
